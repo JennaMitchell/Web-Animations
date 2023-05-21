@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  --main100: #ffdec9;
+  --main200: #fed1b4;
+  --main300: #fcc5a0;
+  --main400: #fab88c;
+  --main500: #f7ac78;
+  --main600: #f39f64;
+  --main700: #ef9250;
+  --main800: #ea863b;
+  --main900: #e57925;
+  --main1000: #df6c02;
+
+  --black: black;
+  --white: white;
+
+  --pixelToRem: calc((1 / 16) * 1rem);
+
+  --r12: calc(12 * var(--pixelToRem));
+  --r16: calc(16 * var(--pixelToRem));
+  --r18: calc(18 * var(--pixelToRem));
+  --r20: calc(20 * var(--pixelToRem));
+  --r22: calc(22 * var(--pixelToRem));
+  --r24: calc(24 * var(--pixelToRem));
+  --r26: calc(26 * var(--pixelToRem));
+  --r28: calc(28 * var(--pixelToRem));
+  --r32: calc(32 * var(--pixelToRem));
+  --r64: calc(64 * var(--pixelToRem));
+  --mainFont: "Water Brush", sans-serif;
+}
+div {
+  box-sizing: border-box;
+}
+p {
+  padding: 0px;
+  margin: 0px;
+  font-family: var(--mainFont);
+  letter-spacing: 1px;
+}
+button {
+  letter-spacing: 1px;
+}
+.svgFollowParentSizing {
+  object-fit: cover;
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+}

@@ -1,0 +1,62 @@
+.navBarMainContainer {
+  width: max-content;
+  max-width: max-content;
+  gap: 200px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  max-block-size: max-content;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: var(--main1000);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-self: flex-end;
+}
+.titleContainer {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.navBarLogo {
+  width: max(30px, 30px);
+  height: max(30px, 30px);
+  object-fit: cover;
+}
+.titleText {
+  color: var(--white);
+  font-family: var(--mainFont);
+  font-size: var(--r26);
+  padding: 0px;
+  margin: 0px;
+}
+.navButtonsContainer {
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.navButton {
+  color: var(--white);
+  font-family: var(--mainFont);
+  background-color: inherit;
+  font-size: var(--r18);
+  padding: 10px 20px;
+  margin: 0px;
+  border: none;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.navButton:hover {
+  color: var(--black);
+  background-color: var(--main100);
+  cursor: pointer;
+}

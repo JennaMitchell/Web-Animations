@@ -1,0 +1,96 @@
+.animationSelectionMenuTopContainer {
+  width: max(400px, 400px);
+  height: max(100%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  position: absolute;
+  left: -400px;
+  top: 0px;
+  transition: left 0.5s;
+  background-color: var(--main1000);
+  z-index: 2;
+  padding: 20px;
+}
+
+.animationSelectionMenuTopContainerMovedOut {
+  left: 0px;
+}
+.animationSelectionBackgroundImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+  object-fit: cover;
+}
+.animationMenuTitle {
+  font-size: var(--r32);
+  width: max-content;
+  max-width: max-content;
+  max-height: max-content;
+  color: white;
+}
+.animationMenuDropdownButton {
+  width: max(100%, 100%);
+  height: max-content;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: inherit;
+  z-index: 3;
+  border: none;
+  color: white;
+  transition: box-shadow 0.5s, color 0.5s, background-color 0.5s;
+}
+.animationMenuDropdownButton:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px white;
+  color: var(--black);
+  background-color: var(--main100);
+}
+
+.animationMenuDropdownButtonActive {
+  box-shadow: 0px 0px 15px black;
+  background-color: transparent;
+}
+
+.animationMenuDropdownButtonTitle {
+  font-size: var(--r22);
+}
+.animationMenuDropdownButtonIcon {
+  width: max(20px, 20px);
+  height: max(20px, 20px);
+  color: inherit;
+}
+.underlineImage {
+  width: max(100%, 100%);
+  height: max(20px, 20px);
+  object-fit: fill;
+  z-index: 2;
+}
+.dropDownButtonContentContainer {
+  width: max(100%, 100%);
+  max-height: max-content;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.animationMenuDropDownContentContainer {
+  background-color: var(--main100);
+  padding: 10px;
+
+  width: max(100%, 100%);
+  height: max(200px, 200px);
+  z-index: 2;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50%;
+  grid-auto-rows: 50%;
+  gap: 10px;
+}

@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  width: calc(100vw - var(--scrollbar-width));
+  max-width: calc(100vw - var(--scrollbar-width));
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}

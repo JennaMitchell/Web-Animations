@@ -1,0 +1,20 @@
+.selectionTopContainer {
+  width: min(100%, 1000px);
+  height: max(1000px, 1000px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--white);
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 0px 10px black;
+  padding: 20px;
+}
+.animationTopCardContainer {
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+}

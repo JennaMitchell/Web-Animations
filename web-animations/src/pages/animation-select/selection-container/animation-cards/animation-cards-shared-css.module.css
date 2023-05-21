@@ -1,0 +1,52 @@
+.animationCardContainer {
+  width: max(80%, 80%);
+  height: max(100%, 100%);
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr max-content max-content;
+  grid-template-columns: 100%;
+  row-gap: 10px;
+  transition: box-shadow 0.5s;
+  position: relative;
+  border: 5px solid black;
+}
+.animationCardContainer:hover {
+  box-shadow: 0px 0px 10px black;
+  cursor: pointer;
+}
+.animationWindow {
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+  position: relative;
+}
+.animationTitle {
+  font-size: var(--r28);
+  line-height: var(--r28);
+
+  color: var(--black);
+}
+.moreInfoText {
+  font-size: var(--r12);
+  line-height: var(--r12);
+
+  color: inherit;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transition: color 0.5s;
+}
+.activeMoreInfoText {
+  color: black;
+}
+.animationShape {
+  width: max(100%, 100%);
+  height: max(100%, 100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  object-fit: contain;
+}
